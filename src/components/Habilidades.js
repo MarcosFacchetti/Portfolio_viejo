@@ -18,21 +18,21 @@ function Habilidades() {
       justify-center 
     '>
         <p className='pb-10'>Habilidades</p>
-        <div className='grid grid-cols-5 gap-4 place-content-evenly '>
+        <div className='grid grid-cols-5 gap-4 place-content-evenly'>
 
-        <div className='flex flex-col text-center'><IoLogoHtml5 size="5rem" /><p>HTML</p></div>
-        <div className='flex flex-col text-center'><IoLogoCss3 size="5rem" /><p>CSS</p></div>
-        <div className='flex flex-col text-center'><IoLogoJavascript size="5rem" /><p>JavaScript</p></div>
-        <div className='flex flex-col text-center'><IoLogoPython size="5rem" /><p>Python</p></div>
-        <div className='flex flex-col text-center'><SiVisualstudio size="5rem" /><p>VSCode</p></div>
-        <div className='flex flex-col text-center'><FaBootstrap size="5rem" /><p>Bootstrap</p></div>
-        <div className='flex flex-col text-center'><DiDjango size="5rem" /></div>
-        <div className='flex flex-col text-center'><FaReact size="5rem" /><p>React</p></div>
-        <div className='flex flex-col text-center'><SiTailwindcss size="5rem" /><p>Tailwind</p></div>
-        <div className='flex flex-col text-center'><SiPostgresql size="5rem" /><p>Postgresql</p></div>
-
+        <div className='flex flex-col text-center sm:w-1/2'><IoLogoHtml5 size="5rem" /><p className="sm:text-sm">HTML</p></div>
+        <div className='flex flex-col text-center sm:w-1/2'><IoLogoCss3 size="5rem" /><p className="sm:text-sm">CSS</p></div>
+        <div className='flex flex-col text-center sm:w-1/2'><IoLogoJavascript size="5rem" /><p className="sm:text-sm">JavaScript</p></div>
+        <div className='flex flex-col text-center sm:w-1/2'><IoLogoPython size="5rem" /><p className="sm:text-sm">Python</p></div>
+        <div className='flex flex-col text-center sm:w-1/2'><SiVisualstudio size="5rem" /><p className="sm:text-sm">VSCode</p></div>
+        <div className='flex flex-col text-center sm:w-1/2'><FaBootstrap size="5rem" /><p className="sm:text-sm">Bootstrap</p></div>
+        <div className='flex flex-col text-center sm:w-1/2'><DiDjango size="5rem" /></div>
+        <div className='flex flex-col text-center sm:w-1/2'><FaReact size="5rem" /><p className="sm:text-sm">React</p></div>
+        <div className='flex flex-col text-center sm:w-1/2'><SiTailwindcss size="5rem" /><p className="sm:text-sm">Tailwind</p></div>
+        <div className='flex flex-col text-center sm:w-1/2'><SiPostgresql size="5rem" /><p className="sm:text-sm">Postgresql</p></div>
 
         </div>
+
 
     </div>
   )
