@@ -22,7 +22,7 @@ function Habilidades() {
 
         <div className='flex flex-col text-center sm:w-1/2'><IoLogoHtml5 size="5rem" /><p className="sm:text-sm">HTML</p></div>
         <div className='flex flex-col text-center sm:w-1/2'><IoLogoCss3 size="5rem" /><p className="sm:text-sm">CSS</p></div>
-        <div className='flex flex-col text-center sm:w-1/2'><IoLogoJavascript size="5rem" /><p className="sm:text-sm">JavaScript</p></div>
+        <div className='flex flex-col text-center sm:w-1/2'><IoLogoJavascript size="5rem" /><p className="sm:text-sm">JS</p></div>
         <div className='flex flex-col text-center sm:w-1/2'><IoLogoPython size="5rem" /><p className="sm:text-sm">Python</p></div>
         <div className='flex flex-col text-center sm:w-1/2'><SiVisualstudio size="5rem" /><p className="sm:text-sm">VSCode</p></div>
         <div className='flex flex-col text-center sm:w-1/2'><FaBootstrap size="5rem" /><p className="sm:text-sm">Bootstrap</p></div>
