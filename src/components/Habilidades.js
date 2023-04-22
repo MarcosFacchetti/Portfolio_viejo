@@ -7,7 +7,8 @@ import {DiDjango} from 'react-icons/di'
 
 function Habilidades() {
   return (
-    <div className='
+    <div
+      className="
     text-white
       h-screen
       flex 
@@ -16,26 +17,52 @@ function Habilidades() {
       text-xl 
       space-y-5 
       justify-center 
-    '>
-        <p className='pb-10'>Habilidades</p>
-        <div className='grid grid-cols-2 gap-4 place-content-evenly'>
-
-        <div className='flex flex-col text-center sm:w-1/2'><IoLogoHtml5 size="5rem" /><p className="sm:text-sm">HTML</p></div>
-        <div className='flex flex-col text-center sm:w-1/2'><IoLogoCss3 size="5rem" /><p className="sm:text-sm">CSS</p></div>
-        <div className='flex flex-col text-center sm:w-1/2'><IoLogoJavascript size="5rem" /><p className="sm:text-sm">JS</p></div>
-        <div className='flex flex-col text-center sm:w-1/2'><IoLogoPython size="5rem" /><p className="sm:text-sm">Python</p></div>
-        <div className='flex flex-col text-center sm:w-1/2'><SiVisualstudio size="5rem" /><p className="sm:text-sm">VSCode</p></div>
-        <div className='flex flex-col text-center sm:w-1/2'><FaBootstrap size="5rem" /><p className="sm:text-sm">Bootstrap</p></div>
-        <div className='flex flex-col text-center sm:w-1/2'><DiDjango size="5rem" /></div>
-        <div className='flex flex-col text-center sm:w-1/2'><FaReact size="5rem" /><p className="sm:text-sm">React</p></div>
-        <div className='flex flex-col text-center sm:w-1/2'><SiTailwindcss size="5rem" /><p className="sm:text-sm">Tailwind</p></div>
-        <div className='flex flex-col text-center sm:w-1/2'><SiPostgresql size="5rem" /><p className="sm:text-sm">Postgresql</p></div>
-
+    "
+    >
+      <p className="pb-10">Habilidades</p>
+      <div className="grid grid-cols-2 gap-4 place-content-evenly">
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <IoLogoHtml5 size="5rem" />
+          <p className="text-xs">HTML</p>
         </div>
-
-
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <IoLogoCss3 size="5rem" />
+          <p className="text-xs">CSS</p>
+        </div>
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <IoLogoJavascript size="5rem" />
+          <p className="text-xs">JS</p>
+        </div>
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <IoLogoPython size="5rem" />
+          <p className="text-xs">Python</p>
+        </div>
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <SiVisualstudio size="5rem" />
+          <p className="text-xs">VSCode</p>
+        </div>
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <FaBootstrap size="5rem" />
+          <p className="text-xs">Bootstrap</p>
+        </div>
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <DiDjango size="5rem" />
+        </div>
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <FaReact size="5rem" />
+          <p className="text-xs">React</p>
+        </div>
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <SiTailwindcss size="5rem" />
+          <p className="text-xs">Tailwind</p>
+        </div>
+        <div className="flex flex-col items-center text-center sm:w-1/2">
+          <SiPostgresql size="5rem" />
+          <p className="text-xs">Postgresql</p>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Habilidades
