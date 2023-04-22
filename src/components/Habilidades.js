@@ -18,7 +18,7 @@ function Habilidades() {
       justify-center 
     '>
         <p className='pb-10'>Habilidades</p>
-        <div className='grid grid-cols-5 gap-4 place-content-evenly'>
+        <div className='grid grid-cols-2 gap-4 place-content-evenly'>
 
         <div className='flex flex-col text-center sm:w-1/2'><IoLogoHtml5 size="5rem" /><p className="sm:text-sm">HTML</p></div>
         <div className='flex flex-col text-center sm:w-1/2'><IoLogoCss3 size="5rem" /><p className="sm:text-sm">CSS</p></div>
