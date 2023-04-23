@@ -20,7 +20,7 @@ function Habilidades() {
     "
     >
       <p className="pb-10">Habilidades</p>
-      <div className="grid grid-cols-2 gap-x-20 gap-y-5 place-content-evenly">
+      <div className="grid grid-cols-2 gap-x-20 gap-y-5 pl-10 ">
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <IoLogoHtml5 size="5rem" />
           <p className="text-xs">HTML</p>
