@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-slate-950 p-6 fixed w-full z-10">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight">Marcos Facchetti</span>
+        <span className="font-semibold text-xl tracking-tight">MF</span>
       </div>
       <div className="block lg:hidden">
         <button
