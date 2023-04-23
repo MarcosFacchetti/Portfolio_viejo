@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import perfil from './perfil.jpg';
+import resumePDF from "./MF.pdf";
+
 
 function Introduccion() {
   const [rotating, setRotating] = useState(false);
@@ -44,6 +46,16 @@ function Introduccion() {
         <div className="pointer-events-none">
         <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=17&duration=1500&pause=1000&color=2CF73E&width=435&lines=Programador+Frontend+.+.+.;Programador+Backend+.+.+." alt="Typing SVG" /></a>
         </div>
+
+        <div className="flex justify-center mt-8">
+      <a
+        href={resumePDF}
+        download="mi_curriculum.pdf"
+        className="bg-slate-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+        Descargar CV
+      </a>
+    </div>
 
     </div>
   );
