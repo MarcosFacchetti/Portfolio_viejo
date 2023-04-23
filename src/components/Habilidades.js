@@ -35,43 +35,43 @@ function Habilidades() {
         justify-center 
       "
     >
-      <p className="pb-10">Skills</p>
+      <p className="pb-10 select-none">Skills</p>
       <div className="grid grid-cols-2 gap-x-20 gap-y-5 pl-0 lg:pl-10">
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <motion.div variants={iconVariants} whileHover="hover">
             <IoLogoHtml5 size="5rem" />
           </motion.div>
-          <p className="text-xs pointer-events-none">HTML</p>
+          <p className="text-xs pointer-events-none select-none">HTML</p>
         </div>
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <motion.div variants={iconVariants} whileHover="hover">
             <IoLogoCss3 size="5rem" />
           </motion.div>
-          <p className="text-xs pointer-events-none">CSS</p>
+          <p className="text-xs pointer-events-none select-none">CSS</p>
         </div>
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <motion.div variants={iconVariants} whileHover="hover">
             <IoLogoJavascript size="5rem" />
           </motion.div>
-          <p className="text-xs pointer-events-none">JavaScript</p>
+          <p className="text-xs pointer-events-none select-none">JavaScript</p>
         </div>
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <motion.div variants={iconVariants} whileHover="hover">
             <IoLogoPython size="5rem" />
           </motion.div>
-          <p className="text-xs pointer-events-none">Python</p>
+          <p className="text-xs pointer-events-none select-none">Python</p>
         </div>
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <motion.div variants={iconVariants} whileHover="hover">
             <SiVisualstudio size="5rem" />
           </motion.div>
-          <p className="text-xs pointer-events-none">VSCode</p>
+          <p className="text-xs pointer-events-none select-none">VSCode</p>
         </div>
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <motion.div variants={iconVariants} whileHover="hover">
             <FaBootstrap size="5rem" />
           </motion.div>
-          <p className="text-xs pointer-events-none">Bootstrap</p>
+          <p className="text-xs pointer-events-none select-none">Bootstrap</p>
         </div>
         <motion.div
   whileHover={{ scale: 1.2 }}
@@ -86,35 +86,35 @@ function Habilidades() {
             size="5rem"
             className="transition duration-300 transform hover:-translate-y-1 hover:scale-110"
           />
-          <p className="text-xs pointer-events-none">React</p>
+          <p className="text-xs pointer-events-none select-none">React</p>
         </div>
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <BsGit
             size="5rem"
             className="transition duration-300 transform hover:-translate-y-1 hover:scale-110"
           />
-          <p className="text-xs pointer-events-none">Git</p>
+          <p className="text-xs pointer-events-none select-none">Git</p>
         </div>
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <DiNpm
             size="5rem"
             className="transition duration-300 transform hover:-translate-y-1 hover:scale-110"
           />
-          <p className="text-xs pointer-events-none">npm</p>
+          <p className="text-xs pointer-events-none select-none">npm</p>
         </div>
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <SiTailwindcss
             size="5rem"
             className="transition duration-300 transform hover:-translate-y-1 hover:scale-110"
           />
-          <p className="text-xs pointer-events-none">Tailwind</p>
+          <p className="text-xs pointer-events-none select-none">Tailwind</p>
         </div>
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <SiPostgresql
             size="5rem"
             className="transition duration-300 transform hover:-translate-y-1 hover:scale-110"
           />
-          <p className="text-xs pointer-events-none">PostgreSQL</p>
+          <p className="text-xs pointer-events-none select-none">PostgreSQL</p>
         </div>
       </div>
     </div>
