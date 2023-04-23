@@ -1,17 +1,20 @@
+import React from "react";
 import Introduccion from "./components/Introduccion";
 import Contacto from "./components/Contacto";
 import Habilidades from "./components/Habilidades";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="flex flex-col">
-      <section>
+    <div>
+      <Navbar />
+      <section id="introduccion">
         <Introduccion />
       </section>
-      <section>
+      <section id="habilidades">
         <Habilidades />
       </section>
-      <section>
+      <section id="contacto">
         <Contacto />
       </section>
     </div>
