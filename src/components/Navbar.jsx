@@ -56,6 +56,17 @@ const Navbar = () => {
           </Link>
           <Link
             activeClass="font-bold"
+            to="proyectos"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-white mr-4"
+            onClick={closeMenu}
+          >
+            Proyectos
+          </Link>
+          <Link
+            activeClass="font-bold"
             to="contacto"
             spy={true}
             smooth={true}

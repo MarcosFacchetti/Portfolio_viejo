@@ -3,6 +3,7 @@ import Introduccion from "./components/Introduccion";
 import Contacto from "./components/Contacto";
 import Habilidades from "./components/Habilidades";
 import Navbar from "./components/Navbar";
+import Proyectos from "./components/Proyectos"
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -19,6 +20,9 @@ function App() {
       </section>
       <section id="habilidades" className={isLoaded ? "section" : ""}>
         <Habilidades />
+      </section>
+      <section id="proyectos" className={isLoaded ? "section" : ""}>
+        <Proyectos />
       </section>
       <section id="contacto" className={isLoaded ? "section" : ""}>
         <Contacto />
