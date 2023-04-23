@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{ opacity: isLoaded ? 1 : 0, transition: "opacity 1s" }}>
+    <div style={{ opacity: isLoaded ? 1 : 0, transition: "opacity 1s" }} className="flex flex-col">
       <Navbar />
       <section id="introduccion" className={isLoaded ? "section" : ""}>
         <Introduccion />

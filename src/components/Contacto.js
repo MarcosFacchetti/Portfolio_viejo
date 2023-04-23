@@ -16,6 +16,7 @@ function Contacto() {
     px-4 
     md:px-16 
     lg:px-24
+    mt-20
     flex flex-col justify-center items-center text-xl space-y-5
     "
     >

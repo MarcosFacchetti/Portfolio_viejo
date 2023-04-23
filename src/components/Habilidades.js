@@ -26,7 +26,7 @@ function Habilidades() {
     <div
       className="
         text-white
-        h-screen
+        min-h-screen
         flex 
         flex-col 
         items-center 
@@ -35,7 +35,7 @@ function Habilidades() {
         justify-center 
       "
     >
-      <p className="text-3xl font-bold mb-4 select-none text-center text-white hover:text-green-400 transition-colors duration-500 ease-in-out">Skills</p>
+      <p className="text-3xl font-bold mb-4 select-none text-center text-white hover:text-green-00 transition-colors duration-500 ease-in-out">Skills</p>
 
       <div className="grid grid-cols-2 gap-x-20 gap-y-5 pl-0 lg:pl-10">
         <div className="flex flex-col items-center text-center sm:w-1/2">
