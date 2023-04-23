@@ -37,11 +37,11 @@ function Introduccion() {
         <img src={perfil} alt='Perfil' className={`w-full h-full object-cover ${rotating ? 'active' : ''}`}/>
       </div>
 
-        <div>
+        <div className="pointer-events-none">
         <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=22&duration=2000&pause=1000&color=0E6EF7&vCenter=true&repeat=false&width=435&lines=Marcos+Facchetti" alt="Typing SVG" /></a>
         </div>
 
-        <div>
+        <div className="pointer-events-none">
         <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=17&duration=2000&pause=1000&color=37F704&vCenter=true&width=435&lines=Programador+Frontend+.+.+.;Programador+Backend+.+.+.;Autodidacta+.+.+." alt="Typing SVG" /></a>
         </div>
 
