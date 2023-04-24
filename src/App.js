@@ -4,6 +4,9 @@ import Contacto from "./components/Contacto";
 import Habilidades from "./components/Habilidades";
 import Navbar from "./components/Navbar";
 import Proyectos from "./components/Proyectos"
+import Video from "./components/Video";
+
+
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -13,7 +16,10 @@ function App() {
   }, []);
 
   return (
+
     <div style={{ opacity: isLoaded ? 1 : 0, transition: "opacity 1s" }} className="flex flex-col">
+
+      <Video/>
       <Navbar />
       <section id="introduccion" className={isLoaded ? "section" : ""}>
         <Introduccion />
@@ -27,6 +33,7 @@ function App() {
       <section id="contacto" className={isLoaded ? "section" : ""}>
         <Contacto />
       </section>
+
     </div>
   );
 }
