@@ -30,12 +30,13 @@ function Proyectos() {
           text-center 
           mb-10 
           select-none 
-          pb-2
+          pb-3
           px-2
+          pt-1
         "
         data-aos="fade-up"
       >
-        Proyectos
+        Proyectos (⚠️ EN PROCESO ⚠️)
       </h1>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <div
