@@ -56,7 +56,7 @@ function Introduccion() {
         </a>
       </div>
 
-      <div className="pointer-events-none backdrop-blur-3xl pl-3">
+      <div className="pointer-events-none backdrop-blur-3xl pl-3 pr-3">
         <a href="https://git.io/typing-svg">
           <img
             src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=17&duration=1500&pause=1000&color=2CF73E&width=435&lines=Programador+Frontend+.+.+.;Programador+Backend+.+.+."
