@@ -40,11 +40,13 @@ function Introduccion() {
       "
         onClick={handleRotation}
       >
-        <img
-          src={perfil}
-          alt="Perfil"
-          className={`w-full h-full object-cover ${rotating ? "active" : ""}`}
-        />
+<img
+  src={perfil}
+  alt="Perfil"
+  className={`w-2/3 h-auto object-cover mx-auto flex items-center ${rotating ? "active" : ""}`}
+/>
+
+
       </div>
 
       <div className="pointer-events-none">
