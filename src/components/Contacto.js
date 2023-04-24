@@ -20,7 +20,7 @@ function Contacto() {
     flex flex-col justify-center items-center text-xl space-y-5
     "
     >
-      <h1 className="text-4xl font-bold mb-8 ">¡Contáctame!</h1>
+      <h1 className="text-4xl font-bold mb-8 backdrop-blur-3xl px-2 pb-2">¡Contáctame!</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-slate-950 p-6 rounded-lg flex items-center">

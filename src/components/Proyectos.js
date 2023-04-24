@@ -25,11 +25,13 @@ function Proyectos() {
     >
       <h1
         className="
+        backdrop-blur-3xl rounded-xl
           text-4xl 
           text-center 
           mb-10 
           select-none 
-          pb-10
+          pb-2
+          px-2
         "
         data-aos="fade-up"
       >

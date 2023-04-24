@@ -34,22 +34,20 @@ function Introduccion() {
         transition-all 
         duration-1000 
         ease-in-out 
-        hover:rotate-180 
+        hover:backdrop-blur-md 
         active:rotate-360 
         active:duration-2000
       "
         onClick={handleRotation}
       >
-<img
-  src={perfil}
-  alt="Perfil"
-  className={`w-2/3 h-auto object-cover mx-auto flex items-center ${rotating ? "active" : ""}`}
-/>
+          <img
+            src={perfil}
+            alt="Perfil"
+            className={`w-2/3 h-auto object-cover mx-auto flex items-center ${rotating ? "active" : ""}`}
+          />
+          </div>
 
-
-      </div>
-
-      <div className="pointer-events-none">
+      <div className="pointer-events-none backdrop-blur-3xl pl-3">
         <a href="https://git.io/typing-svg">
           <img
             src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=22&duration=2000&pause=1000&color=0E6EF7&vCenter=true&repeat=false&width=435&lines=Marcos+Facchetti"
@@ -58,7 +56,7 @@ function Introduccion() {
         </a>
       </div>
 
-      <div className="pointer-events-none">
+      <div className="pointer-events-none backdrop-blur-3xl pl-3">
         <a href="https://git.io/typing-svg">
           <img
             src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=17&duration=1500&pause=1000&color=2CF73E&width=435&lines=Programador+Frontend+.+.+.;Programador+Backend+.+.+."
@@ -67,7 +65,7 @@ function Introduccion() {
         </a>
       </div>
 
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-8 ">
         <a
           href={resumePDF}
           target="_blank"
