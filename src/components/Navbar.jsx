@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-slate-950 p-6 fixed w-full z-10">
+    <nav className="flex items-center justify-between flex-wrap bg-[#061657] p-6 fixed w-full z-10">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight select-none">MF</span>
       </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500 mr-4"
             onClick={closeMenu}
           >
             About
@@ -49,7 +49,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500 mr-4"
             onClick={closeMenu}
           >
             Skills
@@ -60,7 +60,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-white mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500 mr-4"
             onClick={closeMenu}
           >
             Proyectos
@@ -71,7 +71,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-white"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500"
             onClick={closeMenu}
           >
             Contacto
