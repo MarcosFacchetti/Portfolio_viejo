@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import perfil from './perfil.jpg';
 import resumePDF from "./MF.pdf";
 
