@@ -48,20 +48,18 @@ function Proyectos() {
           data-aos="fade-up"
         >
           <img src={abogadoImage} alt="Página de abogacía" className="mb-4" />
-          <h2 className="text-2xl mb-4 text-center">
-            Página de abogacía 
-          </h2>
+          <h2 className="text-2xl mb-4 text-center">Página de abogacía</h2>
           <p className="text-white">
             La página de Abogacía es un proyecto responsive desarrollado con
-            React y Tailwind CSS que ofrece una plataforma en línea para
-            abogados y bufetes legales. Con un diseño moderno y funcional, la
-            página proporciona información clara sobre los servicios legales
-            ofrecidos, perfiles de abogados y recursos útiles. Optimizada para
-            dispositivos móviles, la página garantiza una experiencia fluida y
-            receptiva, permitiendo a los usuarios acceder desde cualquier lugar
-            y en cualquier momento. Es una solución confiable y profesional para
-            quienes buscan servicios legales y asesoramiento jurídico en el
-            entorno digital actual.
+            React y Tailwind CSS que ofrece una plataforma en línea para mostrar
+            los servicios de un solo abogado. Con un diseño moderno y funcional,
+            la página proporciona información clara sobre los servicios legales
+            ofrecidos por este abogado, su perfil y recursos útiles. Optimizada
+            para dispositivos móviles, la página garantiza una experiencia
+            fluida y receptiva, permitiendo a los usuarios acceder desde
+            cualquier lugar y en cualquier momento. Es una solución confiable y
+            profesional para quienes buscan servicios legales y asesoramiento
+            jurídico en el entorno digital actual.
           </p>
           <div className="flex justify-between mt-4">
             <a
