@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#061657] p-6 fixed w-full z-10">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight select-none">MF</span>
+        <span className="font-Montserrat-LightItalic text-xl tracking-tight select-none">MF</span>
       </div>
       <div className="block lg:hidden">
         <button
@@ -29,11 +29,11 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } w-full block flex-grow lg:flex lg:items-center lg:w-auto transition duration-500 ease-in-out`}
+        } w-full block flex-grow lg:flex lg:items-center lg:w-auto transition duration-500 ease-in-out md:ml-[70%]`}
       >
         <div className="text-sm lg:flex-grow">
           <Link
-            activeClass="font-bold"
+            activeClass="font-Montserrat-LightItalic"
             to="introduccion"
             spy={true}
             smooth={true}
@@ -41,10 +41,10 @@ const Navbar = () => {
             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500 mr-4"
             onClick={closeMenu}
           >
-            About
+            Inicio
           </Link>
           <Link
-            activeClass="font-bold"
+            activeClass="font-Montserrat-LightItalic"
             to="habilidades"
             spy={true}
             smooth={true}
@@ -52,10 +52,10 @@ const Navbar = () => {
             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500 mr-4"
             onClick={closeMenu}
           >
-            Skills
+            Habilidades
           </Link>
           <Link
-            activeClass="font-bold"
+            activeClass="font-Montserrat-LightItalic"
             to="proyectos"
             spy={true}
             smooth={true}
@@ -66,7 +66,7 @@ const Navbar = () => {
             Proyectos
           </Link>
           <Link
-            activeClass="font-bold"
+            activeClass="font-Montserrat-LightItalic"
             to="contacto"
             spy={true}
             smooth={true}

@@ -35,9 +35,11 @@ function Habilidades() {
         justify-center 
       "
     >
-      <h1 className="text-3xl font-bold mb-4 select-none text-center text-white backdrop-blur-3xl px-2 py-1  rounded-xl">Skills</h1>
+      <h1 className="text-3xl border-b-2 mb-4 select-none text-center text-white backdrop-blur-3xl px-2 py-1 mt-28 rounded-xl">
+        Habilidades
+      </h1>
 
-      <div className="grid grid-cols-2 gap-x-20 gap-y-5 pl-0 lg:pl-10  ">
+      <div className="grid mx-auto grid-cols-2 gap-x-20 gap-y-5 pl-0 lg:pl-10  ">
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <motion.div variants={iconVariants} whileHover="hover">
             <IoLogoHtml5 size="5rem" />
@@ -75,12 +77,12 @@ function Habilidades() {
           <p className="text-xs pointer-events-none select-none">Bootstrap</p>
         </div>
         <motion.div
-  whileHover={{ scale: 1.2 }}
-  whileTap={{ scale: 0.8 }}
-  className="flex flex-col items-center text-center sm:w-1/2"
->
-  <DiDjango size="5rem" />
-</motion.div>
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
+          className="flex flex-col items-center text-center sm:w-1/2"
+        >
+          <DiDjango size="5rem" />
+        </motion.div>
 
         <div className="flex flex-col items-center text-center sm:w-1/2">
           <FaReact

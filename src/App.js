@@ -16,7 +16,7 @@ function App() {
 
   return (
 
-    <div style={{ opacity: isLoaded ? 1 : 0, transition: "opacity 1s" }} className="flex flex-col">
+    <div style={{ opacity: isLoaded ? 1 : 0, transition: "opacity 1s" }} className="flex flex-col font-Montserrat-LightItalic">
 
       <Navbar />
       <section id="introduccion" className={isLoaded ? "section" : ""}>

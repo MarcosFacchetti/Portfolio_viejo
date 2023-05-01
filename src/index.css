@@ -10,8 +10,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #014421;
-}
+  background: rgb(8,0,117);
+  background: linear-gradient(180deg, rgba(8,0,117,1) 0%, rgba(1,68,33,1) 100%);}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

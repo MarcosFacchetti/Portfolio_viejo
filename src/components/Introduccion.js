@@ -1,6 +1,8 @@
 import React from 'react';
 import perfil from './perfil.jpg';
 import resumePDF from "./MF.pdf";
+import AnimatedArrow from './flecha';
+
 
 
 function Introduccion() {
@@ -17,6 +19,7 @@ function Introduccion() {
       px-4
       md:px-0
       text-center
+      mt-10
     "
     >
       <div>
@@ -46,11 +49,13 @@ function Introduccion() {
           href={resumePDF}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#061657] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-[#061657] mb-2 hover:bg-blue-700 text-white font-Montserrat-LightItalic py-2 px-4 rounded"
         >
-          - Ver Curriculum 🎓 -
+          - Toca para ver Curriculum 🎓 -
         </a>
       </div>
+      <div><AnimatedArrow/></div>
+
     </div>
   );
 }

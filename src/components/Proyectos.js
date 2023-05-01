@@ -35,20 +35,21 @@ function Proyectos() {
           px-2
           pt-1
           mt-28
+          border-b-2
         "
         data-aos="fade-up"
       >
         Proyectos
       </h1>
 
-      <div className="flex flex-row mx-10 md:mx-60">
+      <div className="flex flex-row mx-10 md:max-w-[700px]">
         <div
           className="bg-[#061657] rounded-md shadow-md p-4"
           data-aos="fade-up"
         >
           <img src={abogadoImage} alt="Página de abogacía" className="mb-4" />
           <h2 className="text-2xl mb-4 text-center">
-            Pagina de abogacia 
+            Página de abogacía 
           </h2>
           <p className="text-white">
             La página de Abogacía es un proyecto responsive desarrollado con
@@ -62,7 +63,7 @@ function Proyectos() {
             quienes buscan servicios legales y asesoramiento jurídico en el
             entorno digital actual.
           </p>
-          <div className="flex space-x-4 mt-4">
+          <div className="flex justify-between mt-4">
             <a
               href="https://abogacia.netlify.app/"
               target="_blank"
@@ -77,7 +78,7 @@ function Proyectos() {
               rel="noopener noreferrer"
               className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors duration-300"
             >
-              Visitar GitHub
+              Ver repositorio GitHub
             </a>
           </div>
         </div>
