@@ -14,8 +14,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-[#061657] p-6 fixed w-full z-10">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
+    <nav className="flex items-center justify-between flex-wrap bg-[#0d0657] p-6 fixed w-full z-10">
+      <div className="flex items-center flex-shrink-0 text-white">
         <span className="font-Montserrat-LightItalic text-xl tracking-tight select-none">MF</span>
       </div>
       <div className="block lg:hidden">
@@ -29,16 +29,16 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } w-full block flex-grow lg:flex lg:items-center lg:w-auto transition duration-500 ease-in-out md:ml-[70%]`}
+        } w-full flex-grow lg:flex lg:items-center lg:w-auto transition duration-500 ease-in-out lg:ml-[65%] `}
       >
-        <div className="text-sm lg:flex-grow">
+        <div className="text-lg lg:flex flex-grow text-white justify-between mr-10">
           <Link
             activeClass="font-Montserrat-LightItalic"
             to="introduccion"
             spy={true}
             smooth={true}
             duration={500}
-            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500 mr-4"
+            className="hover:text-blue-300 cursor-pointer block"
             onClick={closeMenu}
           >
             Inicio
@@ -49,7 +49,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500 mr-4"
+            className="hover:text-blue-300 cursor-pointer block"
             onClick={closeMenu}
           >
             Habilidades
@@ -60,7 +60,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500 mr-4"
+            className="hover:text-blue-300 cursor-pointer block"
             onClick={closeMenu}
           >
             Proyectos
@@ -71,7 +71,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500"
+            className="hover:text-blue-300 cursor-pointer block"
             onClick={closeMenu}
           >
             Contacto
