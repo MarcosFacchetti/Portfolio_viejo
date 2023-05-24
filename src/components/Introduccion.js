@@ -29,7 +29,7 @@ function Introduccion() {
       <div className="pointer-events-none backdrop-blur-3xl pl-3">
         <a href="https://git.io/typing-svg">
           <img
-            src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=22&duration=2000&pause=1000&color=ffffff&vCenter=true&repeat=false&width=435&lines=Marcos+Facchetti"
+            src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&duration=1000&pause=3000&color=F7F7F7&center=true&vCenter=true&repeat=false&width=435&lines=Marcos+Facchetti"
             alt="Typing SVG"
           />
         </a>
@@ -38,7 +38,7 @@ function Introduccion() {
       <div className="pointer-events-none backdrop-blur-3xl pl-3 pr-3">
         <a href="https://git.io/typing-svg">
           <img
-            src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&pause=1000&color=ffffff&width=435&lines=Programador+Fullstack"
+            src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&duration=1000&pause=3000&color=F7F7F7&center=true&vCenter=true&width=435&lines=Programador+Fullstack"
             alt="Typing SVG"
           />
         </a>
@@ -54,8 +54,9 @@ function Introduccion() {
           - Toca para ver Curriculum 🎓 -
         </a>
       </div>
-      <div><AnimatedArrow/></div>
-
+      <div>
+        <AnimatedArrow />
+      </div>
     </div>
   );
 }
