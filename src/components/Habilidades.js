@@ -33,7 +33,7 @@ function renderIcon(icon, text) {
       >
         {createElement(icon, { size: "5rem" })}
       </motion.div>
-      <p className="text-sm pointer-events-none select-none">{text}</p>
+      <p className="text-base pointer-events-none select-none">{text}</p>
     </div>
   );
 }
@@ -47,16 +47,16 @@ function Habilidades() {
         flex 
         flex-col 
         items-center 
-        text-xl 
+        text-2xl 
         space-y-5 
         justify-center 
       "
     >
-      <h1 className="text-3xl border-b-2 mb-4 select-none text-center text-white backdrop-blur-3xl px-2 py-1 mt-28 rounded-xl">
+      <h1 className="text-4xl border-b-2 mb-4 select-none text-center text-white backdrop-blur-3xl px-2 py-1 mt-28 rounded-xl">
         Habilidades
       </h1>
 
-      <div className="grid mx-auto grid-cols-2 gap-x-20 gap-y-5 p-5 px-5 justify-center items-center">
+      <div className="grid grid-cols-2 lg:grid-cols-6 gap-x-20 gap-y-5 p-5 px-5 justify-center items-center cursor-pointer lg:gap-y-20">
         {renderIcon(IoLogoHtml5, "HTML")}
         {renderIcon(IoLogoCss3, "CSS")}
         {renderIcon(IoLogoJavascript, "JavaScript")}

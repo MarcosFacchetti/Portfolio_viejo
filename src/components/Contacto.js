@@ -20,13 +20,13 @@ function Contacto() {
     flex flex-col justify-center items-center text-xl space-y-5
     "
     >
-<h1 className="text-4xl font-bold mb-8 backdrop-blur-3xl px-2 pb-2 mt-20 rounded-xl shadow-lg">
+<h1 className="text-4xl font-bold mb-8 backdrop-blur-3xl px-2 pb-2 mt-20 animate-bounce rounded-xl shadow-lg">
   ¡Contáctame!
 </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-[#061657] p-6 rounded-lg flex items-center">
-          <AiOutlineMail className="text-3xl mr-4 text-blue-500" />
+          <AiOutlineMail className="text-3xl animate-[pulse_1s_infinite] mr-4 text-blue-500" />
           <div>
             <h2 className="text-xl font-bold mb-2">Email</h2>
             <a
@@ -39,7 +39,7 @@ function Contacto() {
         </div>
 
         <div className="bg-[#061657] p-6 rounded-lg flex items-center">
-          <AiOutlinePhone className="text-3xl mr-4 text-blue-500" />
+          <AiOutlinePhone className="text-3xl animate-[pulse_1s_infinite] mr-4 text-blue-500" />
           <div>
             <h2 className="text-xl font-bold mb-2">Teléfono</h2>
             <a
@@ -52,7 +52,7 @@ function Contacto() {
         </div>
 
         <div className="bg-[#061657] p-6 rounded-lg flex items-center">
-          <AiOutlineGithub className="text-3xl mr-4 text-blue-500" />
+          <AiOutlineGithub className="text-3xl animate-[pulse_1s_infinite] mr-4 text-blue-500" />
           <div>
             <h2 className="text-xl font-bold mb-2">GitHub</h2>
             <a
@@ -67,9 +67,9 @@ function Contacto() {
         </div>
 
         <div className="bg-[#061657] p-6 rounded-lg flex items-center">
-          <AiOutlineLinkedin className="text-3xl mr-4 text-blue-500" />
+          <AiOutlineLinkedin className="text-3xl animate-[pulse_1s_infinite] mr-4 text-blue-500" />
           <div>
-            <h2 className="text-xl font-bold mb-2">LinkedIn</h2>
+            <h2 className="text-xl font-bold mb-2">Linkedin</h2>
             <a
               href="https://www.linkedin.com/in/marcos-facchetti-460030237/"
               target="_blank"

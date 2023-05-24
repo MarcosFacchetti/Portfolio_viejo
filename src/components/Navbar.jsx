@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#0d0657] p-6 fixed w-full z-10">
-      <div className="flex items-center flex-shrink-0 text-white">
+      <div className="flex items-center text-white">
         <span className="font-Montserrat-LightItalic text-xl tracking-tight select-none">MF</span>
       </div>
       <div className="block lg:hidden">
@@ -34,9 +34,9 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`${isOpen ? "block" : "hidden"} w-full flex-grow lg:flex lg:items-center lg:w-auto transition duration-500 ease-in-out lg:ml-[65%]`}
+        className={`${isOpen ? "block" : "hidden"} w-full flex-grow lg:flex lg:w-auto transition duration-500 ease-in-out lg:ml-[65%]`}
       >
-        <div className="text-lg pt-3 lg:flex flex-grow text-white justify-between mr-10">
+        <div className="text-lg lg:flex flex-grow text-white justify-evenly mr-10">
           {navLinks.map((link) => (
             <Link
               key={link.id}
@@ -45,7 +45,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="hover:text-blue-300 cursor-pointer block mt-5 border-b-2 border-b-blue-300"
+              className="hover:text-blue-300 lg:mt-auto cursor-pointer block mt-5 border-b-2 border-b-blue-300"
               onClick={closeMenu}
             >
               {link.text}

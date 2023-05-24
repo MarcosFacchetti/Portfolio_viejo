@@ -23,7 +23,7 @@ function Introduccion() {
     "
     >
       <div>
-        <img src={perfil} alt="Perfil" className="w-[300px]" />
+        <img src={perfil} alt="Perfil" className="w-[200px]" />
       </div>
 
       <div className="pointer-events-none backdrop-blur-3xl pl-3">
@@ -44,14 +44,14 @@ function Introduccion() {
         </a>
       </div>
 
-      <div className="flex justify-center mt-8 ">
+      <div className="flex justify-center mt-8 animate-pulse ">
         <a
           href={resumePDF}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#061657] mb-2 hover:bg-blue-700 text-white font-Montserrat-LightItalic py-2 px-4 rounded"
         >
-          - Toca para ver Curriculum 🎓 -
+          - Toca este botón para ver Curriculum 🎓 -
         </a>
       </div>
       <div>
