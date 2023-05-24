@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleMenuClick = () => {
     setIsOpen(!isOpen);
@@ -12,6 +12,13 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  const navLinks = [
+    { id: "introduccion", text: "Inicio" },
+    { id: "habilidades", text: "Habilidades" },
+    { id: "proyectos", text: "Proyectos" },
+    { id: "contacto", text: "Contacto" },
+  ];
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#0d0657] p-6 fixed w-full z-10">
@@ -27,55 +34,23 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`${
-          isOpen ? "block" : "hidden"
-        } w-full flex-grow lg:flex lg:items-center lg:w-auto transition duration-500 ease-in-out lg:ml-[65%] `}
+        className={`${isOpen ? "block" : "hidden"} w-full flex-grow lg:flex lg:items-center lg:w-auto transition duration-500 ease-in-out lg:ml-[65%]`}
       >
-        <div className="text-lg lg:flex flex-grow text-white justify-between mr-10">
-          <Link
-            activeClass="font-Montserrat-LightItalic"
-            to="introduccion"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-blue-300 cursor-pointer block"
-            onClick={closeMenu}
-          >
-            Inicio
-          </Link>
-          <Link
-            activeClass="font-Montserrat-LightItalic"
-            to="habilidades"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-blue-300 cursor-pointer block"
-            onClick={closeMenu}
-          >
-            Habilidades
-          </Link>
-          <Link
-            activeClass="font-Montserrat-LightItalic"
-            to="proyectos"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-blue-300 cursor-pointer block"
-            onClick={closeMenu}
-          >
-            Proyectos
-          </Link>
-          <Link
-            activeClass="font-Montserrat-LightItalic"
-            to="contacto"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-blue-300 cursor-pointer block"
-            onClick={closeMenu}
-          >
-            Contacto
-          </Link>
+        <div className="text-lg pt-3 lg:flex flex-grow text-white justify-between mr-10">
+          {navLinks.map((link) => (
+            <Link
+              key={link.id}
+              activeClass="font-Montserrat-LightItalic"
+              to={link.id}
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-blue-300 cursor-pointer block mt-5 border-b-2 border-b-blue-300"
+              onClick={closeMenu}
+            >
+              {link.text}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>

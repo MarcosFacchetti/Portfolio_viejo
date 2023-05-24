@@ -24,7 +24,7 @@ const iconVariants = {
 
 function renderIcon(icon, text) {
   return (
-    <div className="flex flex-col items-center text-center sm:w-1/2">
+    <div className="flex flex-col items-center text-center">
       <motion.div
         variants={iconVariants}
         whileHover="hover"
@@ -33,7 +33,7 @@ function renderIcon(icon, text) {
       >
         {createElement(icon, { size: "5rem" })}
       </motion.div>
-      <p className="text-xs pointer-events-none select-none">{text}</p>
+      <p className="text-sm pointer-events-none select-none">{text}</p>
     </div>
   );
 }
@@ -56,7 +56,7 @@ function Habilidades() {
         Habilidades
       </h1>
 
-      <div className="grid mx-auto grid-cols-2 gap-x-20 gap-y-5 pl-0 lg:pl-10">
+      <div className="grid mx-auto grid-cols-2 gap-x-20 gap-y-5 p-5 px-5 justify-center items-center">
         {renderIcon(IoLogoHtml5, "HTML")}
         {renderIcon(IoLogoCss3, "CSS")}
         {renderIcon(IoLogoJavascript, "JavaScript")}
@@ -70,7 +70,6 @@ function Habilidades() {
         {renderIcon(SiTailwindcss, "Tailwind")}
         {renderIcon(SiPostgresql, "PostgreSQL")}
       </div>
-
     </div>
   );
 }
