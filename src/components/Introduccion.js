@@ -1,11 +1,17 @@
-import React from 'react';
-import perfil from './perfil.jpg';
 import resumePDF from "./MF.pdf";
 import AnimatedArrow from './flecha';
+import { DarkModeContext } from "./DarkModeContext";
+import React, { useContext } from "react";
+
+
 
 
 
 function Introduccion() {
+
+  const { isDarkMode } = useContext(DarkModeContext);
+
+
   return (
     <div
       className="
@@ -22,9 +28,7 @@ function Introduccion() {
       mt-10
     "
     >
-      <div>
-        <img src={perfil} alt="Perfil" className="w-[200px]" />
-      </div>
+
 
       <div className="pointer-events-none backdrop-blur-3xl pl-3">
         <a href="https://git.io/typing-svg">
@@ -44,14 +48,14 @@ function Introduccion() {
         </a>
       </div>
 
-      <div className="flex justify-center mt-8 animate-pulse ">
+      <div className={`flex justify-center mt-8`}>
         <a
           href={resumePDF}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#061657] mb-2 hover:bg-blue-700 text-white font-Montserrat-LightItalic py-2 px-4 rounded"
+          className={` ${isDarkMode ? "bg-gray-500" : "bg-gray-600 text-white"} mb-2 font-Montserrat-LightItalic py-2 px-4 rounded`}
         >
-          - Toca este botón para ver Curriculum 🎓 -
+          - Ver Curriculum 🎓 -
         </a>
       </div>
       <div>
