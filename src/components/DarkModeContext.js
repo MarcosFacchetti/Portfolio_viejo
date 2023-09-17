@@ -7,8 +7,6 @@ const DarkModeProvider = ({ children }) => {
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
-    // Aquí puedes agregar lógica adicional para cambiar el tema de tu aplicación
-    // por ejemplo, cambiando las clases CSS en el elemento raíz de tu aplicación
   };
 
   return (

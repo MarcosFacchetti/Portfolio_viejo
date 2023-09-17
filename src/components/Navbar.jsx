@@ -80,7 +80,7 @@ const Navbar = () => {
         }`}
         onClick={toggleDarkMode}
       >
-        {isDarkMode ? "☀️ Claro" : "🌙 Oscuro"}
+        {isDarkMode ? "☀️" : "🌙"}
       </button>
     </nav>
   );

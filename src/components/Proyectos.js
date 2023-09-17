@@ -59,7 +59,7 @@ function Proyectos() {
                 isDarkMode ? "bg-gray-600 text-white" : "bg-gray-500 text-white"
               }`}
             >
-              Ver repositorio GitHub
+              Ver repositorio Github
             </a>
           </div>
         </div>
