@@ -3,6 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import abogadoImage from "./abogado.png";
 import { DarkModeContext } from "./DarkModeContext";
+import ProjectCard from "./projecttarjeta";
+import perfilImage from "./perfil.jpg";
 
 function Proyectos() {
   const { isDarkMode } = useContext(DarkModeContext);
@@ -28,41 +30,31 @@ function Proyectos() {
         Proyectos
       </h1>
 
-      <div className="flex flex-row mx-10 md:max-w-[700px]">
-        <div
-          className={`rounded-md shadow-md p-4 ${isDarkMode ? "bg-gray-500" : "bg-gray-600"}`}
-          data-aos="fade-up"
-        >
-          <img src={abogadoImage} alt="Página de abogacía" className="mb-4" />
-          <h2 className={`text-2xl mb-4 text-center ${isDarkMode ? "text-white" : "text-white"}`}>
-            Página de abogacía
-          </h2>
-          <p className={`${isDarkMode ? "text-white" : "text-white"}`}>
-            La página de Abogacía es un proyecto responsive desarrollado con React y Tailwind CSS que ofrece una plataforma en línea para mostrar los servicios de un solo abogado. Con un diseño moderno y funcional, la página proporciona información clara sobre los servicios legales ofrecidos por este abogado, su perfil y recursos útiles. Optimizada para dispositivos móviles, la página garantiza una experiencia fluida y receptiva, permitiendo a los usuarios acceder desde cualquier lugar y en cualquier momento. Es una solución confiable y profesional para quienes buscan servicios legales y asesoramiento jurídico en el entorno digital actual.
-          </p>
-          <div className="flex justify-between mt-4">
-            <a
-              href="https://abogacia.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`px-4 py-2 rounded-md hover:bg-gray-700 transition-colors duration-300 ${
-                isDarkMode ? "bg-gray-600 text-white" : "bg-gray-500 text-white"
-              }`}
-            >
-              Ir a la página
-            </a>
-            <a
-              href="https://github.com/MarcosFacchetti/Pagina_Abogacia"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`px-4 py-2 rounded-md hover:bg-gray-700 transition-colors duration-300 ${
-                isDarkMode ? "bg-gray-600 text-white" : "bg-gray-500 text-white"
-              }`}
-            >
-              Ver repositorio Github
-            </a>
-          </div>
-        </div>
+      <div className="grid grid-cols-1 gap-8 mx-10 md:grid-cols-2 lg:grid-cols-3">
+        <ProjectCard
+          imageSrc={abogadoImage}
+          title="Página de abogacía"
+          description="Es un proyecto responsive desarrollado con React y Tailwind CSS que ofrece una plataforma en línea para mostrar los servicios de un abogado"
+          websiteLink="https://abogacia.netlify.app/"
+          githubLink="https://github.com/MarcosFacchetti/Pagina_Abogacia"
+          isDarkMode={isDarkMode}
+        />
+        <ProjectCard
+          imageSrc={perfilImage}
+          title="trabajo en progreso"
+          description="trabajo en progreso"
+          websiteLink=""
+          githubLink=""
+          isDarkMode={isDarkMode}
+        />
+        <ProjectCard
+          imageSrc={perfilImage}
+          title="trabajo en progreso"
+          description="trabajo en progreso"
+          websiteLink=""
+          githubLink=""
+          isDarkMode={isDarkMode}
+        />
       </div>
     </div>
   );
