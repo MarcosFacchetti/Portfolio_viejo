@@ -1,14 +1,30 @@
 import React, { useContext } from "react";
-import {
-  AiOutlineMail,
-  AiOutlinePhone,
-  AiOutlineGithub,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import { AiOutlineMail, AiOutlinePhone, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { DarkModeContext } from "./DarkModeContext";
 
 function Contacto() {
   const { isDarkMode } = useContext(DarkModeContext);
+
+  const CustomCard = ({ title, IconComponent, link, isDarkMode, buttonText }) => {
+    return (
+      <div className={`bg-gray-800 p-4 px-10 rounded-lg shadow-lg ${isDarkMode ? "text-white" : "text-white"}`}>
+        <div className="flex items-center mb-4">
+          <div className={`text-3xl mr-4 ${isDarkMode ? "text-blue-400" : "text-blue-500"}`}>
+            <IconComponent />
+          </div>
+          <h2 className={`text-xl font-bold ${isDarkMode ? "text-white" : "text-white"}`}>{title}</h2>
+        </div>
+        <button
+          onClick={() => window.open(link, "_blank")}
+          className={`text-lg text-blue-500 hover:text-blue-700 transition-colors duration-300 ${
+            isDarkMode ? "text-black" : "text-white"
+          }`}
+        >
+          {buttonText}
+        </button>
+      </div>
+    );
+  };
 
   return (
     <div
@@ -21,96 +37,39 @@ function Contacto() {
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div
-          className={`bg-[#061657] p-6 rounded-lg flex items-center ${
-            isDarkMode ? "bg-gray-500" : "bg-gray-600"
-          }`}
-        >
-          <AiOutlineMail className="text-3xl animate-[pulse_1s_infinite] mr-4 text-blue-500" />
-          <div>
-            <h2 className={`text-xl font-bold mb-2 ${isDarkMode ? "text-white" : "text-white"}`}>
-              Email
-            </h2>
-            <a
-              href="mailto:marcos-facchetti@hotmail.com"
-              className={`text-lg text-blue-500 hover:text-blue-700 transition-colors duration-300 ${
-                isDarkMode ? "text-white" : "text-black"
-              }`}
-            >
-              marcos-facchetti@hotmail.com
-            </a>
-          </div>
-        </div>
-
-        <div
-          className={`bg-[#061657] p-6 rounded-lg flex items-center ${
-            isDarkMode ? "bg-gray-500" : "bg-gray-600"
-          }`}
-        >
-          <AiOutlinePhone className="text-3xl animate-[pulse_1s_infinite] mr-4 text-blue-500" />
-          <div>
-            <h2 className={`text-xl font-bold mb-2 ${isDarkMode ? "text-white" : "text-white"}`}>
-              Teléfono
-            </h2>
-            <a
-              href="tel:+543413025312"
-              className={`text-lg text-blue-500 hover:text-blue-700 transition-colors duration-300 ${
-                isDarkMode ? "text-white" : "text-black"
-              }`}
-            >
-              +54 341 3025312
-            </a>
-          </div>
-        </div>
-
-        <div
-          className={`bg-[#061657] p-6 rounded-lg flex items-center ${
-            isDarkMode ? "bg-gray-500" : "bg-gray-600"
-          }`}
-        >
-          <AiOutlineGithub className="text-3xl animate-[pulse_1s_infinite] mr-4 text-blue-500" />
-          <div>
-            <h2 className={`text-xl font-bold mb-2 ${isDarkMode ? "text-white" : "text-white"}`}>
-              GitHub
-            </h2>
-            <a
-              href="https://github.com/MarcosFacchetti"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`text-lg text-blue-500 hover:text-blue-700 transition-colors duration-300 ${
-                isDarkMode ? "text-white" : "text-black"
-              }`}
-            >
-              github.com/MarcosFacchetti
-            </a>
-          </div>
-        </div>
-
-        <div
-          className={`bg-[#061657] p-6 rounded-lg flex items-center ${
-            isDarkMode ? "bg-gray-500" : "bg-gray-600"
-          }`}
-        >
-          <AiOutlineLinkedin className="text-3xl animate-[pulse_1s_infinite] mr-4 text-blue-500" />
-          <div>
-            <h2 className={`text-xl font-bold mb-2 ${isDarkMode ? "text-white" : "text-white"}`}>
-              Linkedin
-            </h2>
-            <a
-              href="https://www.linkedin.com/in/marcos-facchetti-460030237/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`text-lg text-blue-500 hover:text-blue-700 transition-colors duration-300 ${
-                isDarkMode ? "text-white" : "text-black"
-              }`}
-            >
-              linkedin.com/in/marcos-facchetti
-            </a>
-          </div>
-        </div>
+        <CustomCard
+          IconComponent={AiOutlineMail} // Pasa el componente del ícono
+          title="Email"
+          link="mailto:marcos-facchetti@hotmail.com"
+          isDarkMode={isDarkMode}
+          buttonText="Enviar Correo"
+        />
+        <CustomCard
+          IconComponent={AiOutlinePhone} // Pasa el componente del ícono
+          title="Teléfono"
+          link="https://wa.me/543413025312" // Enlace de WhatsApp
+          isDarkMode={isDarkMode}
+          buttonText="Enviar WhatsApp"
+        />
+        <CustomCard
+          IconComponent={AiOutlineGithub} // Pasa el componente del ícono
+          title="GitHub"
+          link="https://github.com/MarcosFacchetti"
+          isDarkMode={isDarkMode}
+          buttonText="Ver en GitHub"
+        />
+        <CustomCard
+          IconComponent={AiOutlineLinkedin} // Pasa el componente del ícono
+          title="Linkedin"
+          link="https://www.linkedin.com/in/marcos-facchetti-460030237/"
+          isDarkMode={isDarkMode}
+          buttonText="Ver en Linkedin"
+        />
       </div>
     </div>
   );
 }
 
 export default Contacto;
+
+
