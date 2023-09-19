@@ -10,8 +10,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: hsl(248, 16%, 27%);
+  background-color: rgb(55, 65, 81);
 }
+
+
+.gradient-animation {
+  background: linear-gradient(to right, #ff9900, #ff33cc, #ff9900);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 6s linear infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+  }
+  100% {
+    background-size: 200% 100%;
+    background-position: -100% 0%;
+  }
+}
+
+
+
+  
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

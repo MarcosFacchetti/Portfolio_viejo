@@ -3,6 +3,7 @@ import resumePDF from "./MF.pdf";
 import AnimatedArrow from "./flecha";
 import { DarkModeContext } from "./DarkModeContext";
 import perfilImage from "./foto_facha.jpg";
+import TituloConBordeGradiente from "./titulo";
 
 function Introduccion() {
   const { isDarkMode } = useContext(DarkModeContext);
@@ -21,27 +22,32 @@ function Introduccion() {
       md:px-0
       text-center
       mt-10
+      select-none
     "
     >
       <div className="mb-4">
-        {/* Agregar tu foto redonda aquí */  }
-        <img
-          src={perfilImage}
-          alt="Marcos Facchetti"
-          className="rounded-full w-60 h-60 border-4 border-white shadow-lg"
-          style={{ objectFit: "cover" }} // Aplicar el estilo para el ajuste
-        />
+        <div className="relative w-60 h-60">
+          <div className="absolute inset-0 flex items-center justify-center rounded-full bg-gradient-to-r from-[#ff9900] via-[#ff33cc] to-[#ff9900] border-4 border-transparent">
+            <img
+              src={perfilImage}
+              alt="Marcos Facchetti"
+              className="rounded-full w-full h-full shadow-lg"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+        </div>
       </div>
-      <h1 className="text-3xl font-bold">Marcos Facchetti</h1>
+      <div className="text-4xl font-bold mb-8 backdrop-blur-3xl px-2 mt-20  rounded-xl shadow-lg">
+        <TituloConBordeGradiente titulo="Marcos Facchetti" />
+      </div>
       <p className="text-lg">Programador Fullstack</p>
-
       <div className={`flex justify-center mt-8`}>
         <a
           href={resumePDF}
           target="_blank"
           rel="noopener noreferrer"
           className={` ${
-            isDarkMode ? "bg-gray-500" : "bg-gray-600 text-white"
+            isDarkMode ? "bg-gray-400" : "bg-gray-600 text-white"
           } mb-2 font-Montserrat-LightItalic py-2 px-4 rounded`}
         >
           - Ver Curriculum 🎓 -

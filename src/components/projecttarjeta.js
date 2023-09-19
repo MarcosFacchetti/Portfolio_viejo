@@ -3,23 +3,25 @@ import React from "react";
 function ProjectCard({ imageSrc, title, description, websiteLink, githubLink, isDarkMode }) {
   return (
     <div
-      className={`rounded-md shadow-md p-4 ${
-        isDarkMode ? "bg-gray-500" : "bg-gray-600"
+      className={`bg-gray-800 p-6 rounded-lg shadow-lg ${
+        isDarkMode ? "text-white" : "text-white"
       }`}
     >
-      <img src={imageSrc} alt={title} className="mb-4" />
-      <h2 className={`text-2xl mb-4 text-center ${isDarkMode ? "text-white" : "text-white"}`}>
-        {title}
-      </h2>
-      <p className={`${isDarkMode ? "text-white" : "text-white"}`}>{description}</p>
-      <div className="flex justify-between mt-4">
+      <div className="mb-4">
+        <img
+          src={imageSrc}
+          alt={title}
+          className="rounded-sm  border-4 border-gray-600"
+        />
+      </div>
+      <h2 className="text-2xl font-bold mb-2 text-center">{title}</h2>
+      <p className="text-lg mb-4 text-center">{description}</p>
+      <div className="flex justify-center space-x-4">
         <a
           href={websiteLink}
           target="_blank"
           rel="noopener noreferrer"
-          className={`px-4 py-2 rounded-md hover:bg-gray-700 transition-colors duration-300 ${
-            isDarkMode ? "bg-gray-600 text-white" : "bg-gray-500 text-white"
-          }`}
+          className={`px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white transition-colors duration-300`}
         >
           Ir a la página
         </a>
@@ -27,9 +29,7 @@ function ProjectCard({ imageSrc, title, description, websiteLink, githubLink, is
           href={githubLink}
           target="_blank"
           rel="noopener noreferrer"
-          className={`px-4 py-2 rounded-md hover:bg-gray-700 transition-colors duration-300 ${
-            isDarkMode ? "bg-gray-600 text-white" : "bg-gray-500 text-white"
-          }`}
+          className={`px-4 py-2 rounded-md bg-gray-500 hover:bg-gray-600 text-white transition-colors duration-300`}
         >
           Ver repositorio Github
         </a>
@@ -39,3 +39,4 @@ function ProjectCard({ imageSrc, title, description, websiteLink, githubLink, is
 }
 
 export default ProjectCard;
+

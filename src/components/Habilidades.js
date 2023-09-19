@@ -11,6 +11,9 @@ import { FaBootstrap, FaReact } from "react-icons/fa";
 import { DiDjango, DiNpm } from "react-icons/di";
 import { BsGit } from "react-icons/bs";
 import { motion } from "framer-motion";
+import TituloConBordeGradiente from "./titulo";
+import "../index.css";
+
 
 const iconVariants = {
   hover: {
@@ -31,7 +34,7 @@ function renderIcon(icon, text) {
         whileTap={{ scale: 0.8 }}
         className="transition duration-300 transform hover:-translate-y-1 hover:scale-110"
       >
-        {createElement(icon, { size: "5rem" })}
+        {createElement(icon, { size: "5rem", className: "icon-hover" })}
       </motion.div>
       <p className="text-base pointer-events-none select-none">{text}</p>
     </div>
@@ -52,9 +55,9 @@ function Habilidades() {
         justify-center 
       "
     >
-      <h1 className="text-4xl border-b-2 mb-4 select-none text-center text-white backdrop-blur-3xl px-2 py-1 mt-28 rounded-xl">
-        Habilidades
-      </h1>
+        <div className="text-4xl font-bold mb-8 backdrop-blur-3xl px-2 mt-20 rounded-xl shadow-lg">
+          <TituloConBordeGradiente titulo="Habilidades" />
+        </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-6 gap-x-20 gap-y-5 p-5 px-5 justify-center items-center cursor-pointer lg:gap-y-20">
         {renderIcon(IoLogoHtml5, "HTML")}

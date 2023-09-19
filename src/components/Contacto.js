@@ -1,18 +1,39 @@
 import React, { useContext } from "react";
 import { AiOutlineMail, AiOutlinePhone, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { DarkModeContext } from "./DarkModeContext";
+import TituloConBordeGradiente from "./titulo";
 
 function Contacto() {
   const { isDarkMode } = useContext(DarkModeContext);
 
-  const CustomCard = ({ title, IconComponent, link, isDarkMode, buttonText }) => {
+  const CustomCard = ({
+    title,
+    IconComponent,
+    link,
+    isDarkMode,
+    buttonText,
+  }) => {
     return (
-      <div className={`bg-gray-800 p-4 px-10 rounded-lg shadow-lg ${isDarkMode ? "text-white" : "text-white"}`}>
+      <div
+        className={`bg-gray-800 p-4 px-10 rounded-lg shadow-lg ${
+          isDarkMode ? "text-white" : "text-white"
+        }`}
+      >
         <div className="flex items-center mb-4">
-          <div className={`text-3xl mr-4 ${isDarkMode ? "text-blue-400" : "text-blue-500"}`}>
+          <div
+            className={`text-3xl mr-4 ${
+              isDarkMode ? "text-blue-400" : "text-blue-500"
+            }`}
+          >
             <IconComponent />
           </div>
-          <h2 className={`text-xl font-bold ${isDarkMode ? "text-white" : "text-white"}`}>{title}</h2>
+          <h2
+            className={`text-xl font-bold ${
+              isDarkMode ? "text-white" : "text-white"
+            }`}
+          >
+            {title}
+          </h2>
         </div>
         <button
           onClick={() => window.open(link, "_blank")}
@@ -32,9 +53,9 @@ function Contacto() {
         isDarkMode ? "bg-dark" : "bg-light"
       }`}
     >
-      <h1 className="text-4xl font-bold mb-8 backdrop-blur-3xl px-2 pb-2 mt-20 animate-bounce rounded-xl shadow-lg">
-        ¡Contáctame!
-      </h1>
+        <div className="text-4xl font-bold mb-8 backdrop-blur-3xl px-2 mt-20 animate-bounce rounded-xl shadow-lg">
+          <TituloConBordeGradiente  titulo="Contactame" />
+        </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <CustomCard

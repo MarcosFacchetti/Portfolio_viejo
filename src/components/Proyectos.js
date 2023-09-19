@@ -4,7 +4,9 @@ import "aos/dist/aos.css";
 import abogadoImage from "./abogado.png";
 import { DarkModeContext } from "./DarkModeContext";
 import ProjectCard from "./projecttarjeta";
-import perfilImage from "./perfil.jpg";
+import TituloConBordeGradiente from "./titulo";
+
+
 
 function Proyectos() {
   const { isDarkMode } = useContext(DarkModeContext);
@@ -21,38 +23,17 @@ function Proyectos() {
         isDarkMode ? "bg-dark" : "bg-light"
       }`}
     >
-      <h1
-        className={`backdrop-blur-3xl rounded-xl text-4xl text-center mb-10 select-none pb-3 px-2 pt-1 mt-28 border-b-2 ${
-          isDarkMode ? "text-white" : "text-white"
-        }`}
-        data-aos="fade-up"
-      >
-        Proyectos
-      </h1>
-
-      <div className="grid grid-cols-1 gap-8 mx-10 md:grid-cols-2 lg:grid-cols-3">
+           
+           <div className="text-4xl font-bold mb-8 backdrop-blur-3xl px-2 mt-20 rounded-xl shadow-lg">
+          <TituloConBordeGradiente  titulo="Proyectos" />
+        </div>
+      <div className="flex items-center flex-col max-w-2xl">
         <ProjectCard
           imageSrc={abogadoImage}
           title="Página de abogacía"
           description="Es un proyecto responsive desarrollado con React y Tailwind CSS que ofrece una plataforma en línea para mostrar los servicios de un abogado"
           websiteLink="https://abogacia.netlify.app/"
           githubLink="https://github.com/MarcosFacchetti/Pagina_Abogacia"
-          isDarkMode={isDarkMode}
-        />
-        <ProjectCard
-          imageSrc={perfilImage}
-          title="trabajo en progreso"
-          description="trabajo en progreso"
-          websiteLink=""
-          githubLink=""
-          isDarkMode={isDarkMode}
-        />
-        <ProjectCard
-          imageSrc={perfilImage}
-          title="trabajo en progreso"
-          description="trabajo en progreso"
-          websiteLink=""
-          githubLink=""
           isDarkMode={isDarkMode}
         />
       </div>
