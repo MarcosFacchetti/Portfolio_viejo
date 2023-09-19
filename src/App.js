@@ -11,7 +11,7 @@ function App() {
     <DarkModeProvider>
       <DarkModeContext.Consumer>
         {({ isDarkMode }) => (
-          <div className={`flex flex-col font-Montserrat-LightItalic ${isDarkMode ? 'bg-gray-400' : 'bg-gray-700'}`}>
+          <div className={`flex flex-col font-Montserrat-LightItalic ${isDarkMode ? 'bg-[#575761]' : 'bg-gray-700'}`}>
             <Navbar />
             <section id="introduccion">
               <Introduccion />

@@ -3,7 +3,7 @@ import React from "react";
 function ProjectCard({ imageSrc, title, description, websiteLink, githubLink, isDarkMode }) {
   return (
     <div
-      className={`bg-gray-800 p-6 rounded-lg shadow-lg ${
+      className={`bg-gray-800  p-6 rounded-lg shadow-lg ${
         isDarkMode ? "text-white" : "text-white"
       }`}
     >
@@ -21,7 +21,7 @@ function ProjectCard({ imageSrc, title, description, websiteLink, githubLink, is
           href={websiteLink}
           target="_blank"
           rel="noopener noreferrer"
-          className={`px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white transition-colors duration-300`}
+          className={`px-4 py-2 rounded-md bg-slate-500 hover:bg-slate-600 text-white transition-colors duration-300`}
         >
           Ir a la página
         </a>
