@@ -47,7 +47,7 @@ function Introduccion() {
           target="_blank"
           rel="noopener noreferrer"
           className={` ${
-            isDarkMode ? "bg-[#ffffff3b] hover:bg-[#8480809c]" : "bg-gray-600 text-white"
+            isDarkMode ? "bg-[#ffffff3b] hover:bg-[#3914149c]" : "bg-gray-600 hover:bg-[#3914149c] text-white"
           } mb-2 font-Montserrat-LightItalic py-2 px-4 rounded`}
         >
           -  Toca para ver Currículum 🎓  -
