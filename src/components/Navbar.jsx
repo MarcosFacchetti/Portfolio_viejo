@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       className={`flex items-center justify-between flex-wrap px-6 p-1 fixed w-full z-10 ${
-        isDarkMode ? "bg-gray-500" : "bg-gray-800"
+        isDarkMode ? "bg-[#258885]" : "bg-gray-800"
       }`}
     >
       <div>
@@ -75,8 +75,8 @@ const Navbar = () => {
         </div>
       </div>
       <button //boton de darkmode
-        className={`fixed bottom-4 right-4 p-2 rounded-md shadow ${
-          isDarkMode ? "bg-gray-200 text-black" : "bg-gray-800 text-white"
+        className={`fixed sm:right-4 p-2 rounded-md border shadow sm:bottom-5 right-20 ${
+          isDarkMode ? "bg-gray-200 border-black text-black" : "bg-gray-800 text-white"
         }`}
         onClick={toggleDarkMode}
       >

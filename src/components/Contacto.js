@@ -15,8 +15,8 @@ function Contacto() {
   }) => {
     return (
       <div
-        className={`bg-gray-800 p-4 px-10 rounded-lg shadow-lg ${
-          isDarkMode ? "text-white" : "text-white"
+        className={` p-4 px-10 rounded-lg shadow-lg ${
+          isDarkMode ? "text-white bg-[#ffffff22]" : "text-white"
         }`}
       >
         <div className="flex items-center mb-4">

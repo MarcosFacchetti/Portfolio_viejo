@@ -3,8 +3,8 @@ import React from "react";
 function ProjectCard({ imageSrc, title, description, websiteLink, githubLink, isDarkMode }) {
   return (
     <div
-      className={`bg-gray-800  p-6 rounded-lg shadow-lg ${
-        isDarkMode ? "text-white" : "text-white"
+      className={`  p-6 rounded-lg shadow-lg ${
+        isDarkMode ? "text-white bg-[#ffffff27]" : "text-white"
       }`}
     >
       <div className="mb-4">
