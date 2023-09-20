@@ -50,7 +50,7 @@ function Introduccion() {
             isDarkMode ? "bg-[#ffffff3b]" : "bg-gray-600 text-white"
           } mb-2 font-Montserrat-LightItalic py-2 px-4 rounded`}
         >
-          - Ver Currículum 🎓 -
+          ->  Toca para ver Currículum 🎓  <-
         </a>
       </div>
       <div>
