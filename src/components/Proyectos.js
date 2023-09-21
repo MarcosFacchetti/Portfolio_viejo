@@ -38,7 +38,7 @@ function Proyectos() {
           imageSrc={clima}
           title="App de clima"
           description="Es un proyecto desarrollado con React para practicar la utilización de APIs"
-          websiteLink="https://mfclima.netlify.app/"
+          websiteLink="https://mjfclima.netlify.app/"
           githubLink="https://github.com/MarcosFacchetti/clima"
           isDarkMode={isDarkMode}
         />
